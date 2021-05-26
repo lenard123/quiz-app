@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:orientation="vertical"
+	android:paddingBottom="10dp">
+
+	<LinearLayout
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		android:orientation="vertical"
+		android:background="#FFFFFF"
+		android:padding="20dp">
+
+		<TextView
+			android:layout_height="wrap_content"
+			android:textAppearance="?android:attr/textAppearanceLarge"
+			android:layout_width="wrap_content"
+			android:text="1. What is the planet closest to the sun?"
+			android:layout_marginBottom="10dp"
+			android:id="@+id/resultitemTextView1"/>
+
+		<LinearLayout
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			android:orientation="horizontal"
+			android:layout_marginBottom="10dp">
+
+			<TextView
+				android:layout_height="wrap_content"
+				android:textAppearance="?android:attr/textAppearanceMedium"
+				android:layout_width="wrap_content"
+				android:text="Your Answer:"
+				android:layout_marginRight="5dp"/>
+
+			<TextView
+				android:layout_height="wrap_content"
+				android:textAppearance="?android:attr/textAppearanceMedium"
+				android:layout_width="wrap_content"
+				android:text="Venus"
+				android:textColor="#FF0F00"
+				android:id="@+id/resultitemTextView2"/>
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			android:orientation="horizontal">
+
+			<TextView
+				android:layout_height="wrap_content"
+				android:textAppearance="?android:attr/textAppearanceMedium"
+				android:layout_width="wrap_content"
+				android:text="Correct Answer:"
+				android:layout_marginRight="5dp"/>
+
+			<TextView
+				android:layout_height="wrap_content"
+				android:textAppearance="?android:attr/textAppearanceMedium"
+				android:layout_width="wrap_content"
+				android:text="Mercury"
+				android:textColor="#00FF00"
+				android:id="@+id/resultitemTextView3"/>
+
+		</LinearLayout>
+
+	</LinearLayout>
+
+</LinearLayout>
+

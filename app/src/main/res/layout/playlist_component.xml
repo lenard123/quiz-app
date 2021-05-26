@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_height="wrap_content"
+	android:layout_width="match_parent"
+	android:orientation="vertical"
+	android:paddingBottom="20dp">
+
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:orientation="vertical"
+		android:background="#2E2B3F"
+		android:padding="20dp">
+
+		<TextView
+			android:layout_height="wrap_content"
+			android:textAppearance="?android:attr/textAppearanceLarge"
+			android:layout_width="wrap_content"
+			android:text="Course Name"
+			android:textColor="#FFFFFF"
+			android:layout_marginBottom="10dp"
+			android:textSize="26sp"
+			android:id="@+id/playlistcomponentTextView1"/>
+
+		<TextView
+			android:layout_height="wrap_content"
+			android:textAppearance="?android:attr/textAppearanceMedium"
+			android:layout_width="wrap_content"
+			android:text="Lorem ipsum dolor sit amet, consectetur adipisicing elit."
+			android:textColor="#8E8C96"
+			android:layout_marginBottom="10dp"
+			android:id="@+id/playlistcomponentTextView2"/>
+
+		<View
+			android:layout_height="1dp"
+			android:layout_width="match_parent"
+			android:background="#8E8C96"
+			android:layout_marginBottom="10dp"/>
+
+		<Button
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			android:text="View Videos"
+			android:backgroundTint="#6C757D"
+			android:textColor="#FFFFFF"
+			android:padding="20dp"
+			android:id="@+id/playlistcomponentButton1"/>
+
+	</LinearLayout>
+
+</LinearLayout>
+

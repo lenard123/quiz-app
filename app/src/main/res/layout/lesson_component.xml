@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:orientation="vertical"
+	android:paddingBottom="20dp">
+
+	<LinearLayout
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		android:orientation="vertical"
+		android:background="#FFFFFF"
+		android:padding="20dp"
+		android:visibility="visible"
+		android:id="@+id/lessoncomponentLinearLayout1">
+
+		<TextView
+			android:layout_height="wrap_content"
+			android:textAppearance="?android:attr/textAppearanceLarge"
+			android:layout_width="wrap_content"
+			android:text="Lesson Name"
+			android:textColor="#000000"
+			android:layout_marginBottom="10dp"
+			android:textSize="26sp"
+			android:id="@+id/lessoncomponentTextView1"/>
+
+		<View
+			android:background="?android:attr/dividerVertical"
+			android:layout_height="1dp"
+			android:layout_width="match_parent"
+			android:layout_marginBottom="10dp"/>
+
+		<LinearLayout
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			android:orientation="horizontal"
+			android:layout_marginBottom="10dp">
+
+			<TextView
+				android:layout_height="wrap_content"
+				android:textAppearance="?android:attr/textAppearanceLarge"
+				android:layout_width="wrap_content"
+				android:text="Quiz Score:"
+				android:textSize="22sp"
+				android:textColor="#3B3E42"
+				android:layout_marginRight="5dp"/>
+
+			<TextView
+				android:layout_height="wrap_content"
+				android:textAppearance="?android:attr/textAppearanceLarge"
+				android:layout_width="wrap_content"
+				android:text="5/10"
+				android:id="@+id/lessoncomponentTextView2"/>
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			android:orientation="horizontal">
+
+			<Button
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:text="Learn"
+				android:layout_weight=".5"
+				android:backgroundTint="#0D6EFD"
+				android:textColor="#FFFFFF"
+				android:id="@+id/lessoncomponentButton2"
+				android:padding="20dp"/>
+
+			<Button
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:text="Take Quiz"
+				android:layout_weight=".5"
+				android:backgroundTint="#198754"
+				android:textColor="#FFFFFF"
+				android:id="@+id/lessoncomponentButton1"
+				android:padding="20dp"/>
+
+		</LinearLayout>
+
+	</LinearLayout>
+
+	<LinearLayout
+		android:layout_height="match_parent"
+		android:layout_width="match_parent"
+		android:orientation="vertical"
+		android:background="#191919"
+		android:padding="20dp"
+		android:gravity="center"
+		android:paddingTop="30dp"
+		android:paddingBottom="30dp"
+		android:visibility="gone"
+		android:id="@+id/lessoncomponentLinearLayout2">
+
+		<ImageView
+			android:src="@drawable/lock"
+			android:layout_height="60dp"
+			android:layout_width="wrap_content"/>
+
+		<TextView
+			android:layout_height="wrap_content"
+			android:textAppearance="?android:attr/textAppearanceLarge"
+			android:layout_width="wrap_content"
+			android:text="Complete the previous lesson first"
+			android:textColor="#FFFFFF"
+			android:textAlignment="center"
+			android:gravity="center"/>
+
+	</LinearLayout>
+
+</LinearLayout>
+

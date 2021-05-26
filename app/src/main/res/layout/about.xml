@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:background="#1C1C28"
+	android:layout_height="match_parent"
+	android:layout_width="match_parent">
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="fill_parent"
+		android:orientation="vertical"
+		android:padding="20dp">
+
+		<TextView
+			android:layout_height="wrap_content"
+			android:textAppearance="?android:attr/textAppearanceLarge"
+			android:layout_width="wrap_content"
+			android:text="About"
+			android:textSize="28sp"
+			android:textColor="#FFFFFF"
+			android:layout_marginBottom="20dp"/>
+
+		<TextView
+			android:layout_height="wrap_content"
+			android:textAppearance="?android:attr/textAppearanceLarge"
+			android:layout_width="match_parent"
+			android:text="E-Learning Quizlet Application offers programming topics, computer related subjects topics and provide different types of quizzes to test what they have learned or to test their knowledge about a certain topic.  It is a learning tool for those BSCS students to review their programming topics and to grow their skills."
+			android:textColor="#FFFFFF"
+			android:textSize="18sp"
+			android:layout_marginBottom="15dp"/>
+
+		<TextView
+			android:layout_height="wrap_content"
+			android:textAppearance="?android:attr/textAppearanceLarge"
+			android:layout_width="match_parent"
+			android:textColor="#FFFFFF"
+			android:textSize="18sp"
+			android:text="It is also for students who wants to learn about programming. This application makes the student to learn easier by virtual and online interactive learning resources."/>
+
+	</LinearLayout>
+
+</ScrollView>
+

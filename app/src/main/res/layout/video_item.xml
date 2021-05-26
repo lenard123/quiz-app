@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_height="wrap_content"
+	android:layout_width="match_parent"
+	android:orientation="horizontal"
+	android:paddingBottom="20dp">
+
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:orientation="vertical"
+		android:background="#FFFFFF"
+		android:padding="20dp">
+
+		<com.google.android.youtube.player.YouTubeThumbnailView
+			android:layout_width="match_parent"
+			android:layout_height="180dp"
+			android:adjustViewBounds="true"
+			android:src="@drawable/no_thumbnail"
+			android:scaleType="centerInside"
+			android:id="@+id/videoitemYouTubeThumbnailView1"/>
+
+		<TextView
+			android:layout_height="wrap_content"
+			android:textAppearance="?android:attr/textAppearanceLarge"
+			android:layout_width="wrap_content"
+			android:text="Video Title"
+			android:textSize="22sp"
+			android:textColor="#3B3E42"
+			android:layout_marginRight="5dp"
+			android:id="@+id/videoitemTextView1"/>
+
+		<Button
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			android:text="Watch"
+			android:backgroundTint="#198754"
+			android:textColor="#FFFFFF"
+			android:padding="20dp"
+			android:id="@+id/videoitemButton1"/>
+
+	</LinearLayout>
+
+</LinearLayout>
+
