@@ -10,6 +10,7 @@ import com.group5.quizApp.Models.*;
 import java.io.*;
 import java.util.*;
 
+
 public class MainActivity extends Activity 
 {
 	
@@ -23,6 +24,9 @@ public class MainActivity extends Activity
         createDatabase();
 		App2 app = new HomeApp2(this);
 		app.setContentView();
+		
+		
+		
 		//LoadApp(new Home(this));
     }
 

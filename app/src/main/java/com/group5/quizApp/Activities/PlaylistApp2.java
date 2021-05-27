@@ -20,7 +20,8 @@ public class PlaylistApp2 extends App2
 		ArrayList<Playlist> playlists = Playlist.getAll();
 		LinearLayout playlist_panel = (LinearLayout) findView(R.id.videoplaylistLinearLayout1);
 		for(int i = 0; i < playlists.size();i++){
-			playlist_panel.addView(PlayListComponent.CreateComponent(this, playlists.get(i)));
+			PlaylistComponent2 component = new PlaylistComponent2(this, playlists.get(i));
+			playlist_panel.addView(component.GetView());
 		}
 	}
 	
