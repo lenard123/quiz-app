@@ -13,6 +13,7 @@ public class QuizTimeApp2 extends App2
 	ArrayList<String> answer = new ArrayList<String>();
 	LinearLayout quiz_panel;
 	ProgressBar progress;
+	TextView tv1;
 	
 	public QuizTimeApp2(MainActivity app, Lesson lesson){
 		super(app, R.layout.quiz);
@@ -25,6 +26,7 @@ public class QuizTimeApp2 extends App2
 		quiz = Quiz.getQuizzes(lesson);
 		quiz_panel = (LinearLayout) findView(R.id.quizLinearLayout1);
 		progress = (ProgressBar) findView(R.id.quizProgressBar1);
+		tv1 = (TextView) findView(R.id.quizTextView1);
 		nextQuestion();
 	}
 	
@@ -38,7 +40,8 @@ public class QuizTimeApp2 extends App2
 		}
 		else
 		{
-			progress.setProgress(answer.size()*100/quiz.size());
+			tv1.setText(answer.size()+1 +" / " + quiz.size());
+			progress.setProgress((answer.size()+1)*100/quiz.size());
 			quiz_panel.removeAllViews();
 			quiz_panel.addView(QuizComponent.CreateComponent(this, quiz.get(answer.size()), answer.size()));
 		}

@@ -11,17 +11,32 @@
 		android:layout_height="wrap_content"
 		android:textAppearance="?android:attr/textAppearanceLarge"
 		android:layout_width="wrap_content"
-		android:text="Quiz Time"
+		android:text="Quiz Time!"
 		android:textColor="#FFFFFF"
 		android:textSize="28sp"
 		android:layout_marginBottom="20dp"/>
 
-	<ProgressBar
-		style="?android:attr/progressBarStyleHorizontal"
+	<LinearLayout
 		android:layout_height="wrap_content"
 		android:layout_width="match_parent"
-		android:id="@+id/quizProgressBar1"
-		android:layout_marginBottom="20dp"/>
+		android:orientation="vertical">
+
+		<TextView
+			android:layout_height="wrap_content"
+			android:textAppearance="?android:attr/textAppearanceSmall"
+			android:layout_width="wrap_content"
+			android:text="Progress:"
+			android:textColor="#8F8F8F"
+			android:layout_marginRight="10dp"
+			android:id="@+id/quizTextView1"/>
+
+		<ProgressBar
+			style="?android:attr/progressBarStyleHorizontal"
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			android:id="@+id/quizProgressBar1"/>
+
+	</LinearLayout>
 
 	<LinearLayout
 		android:layout_height="match_parent"

@@ -1,37 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<ScrollView
 	xmlns:android="http://schemas.android.com/apk/res/android"
-	android:layout_width="fill_parent"
-	android:layout_height="fill_parent"
-	android:orientation="vertical"
-	android:background="#1C1C28"
-	android:paddingTop="10dp">
+	android:layout_height="match_parent"
+	android:layout_width="match_parent"
+	android:fillViewport="true">
 
-	<TextView
-		android:layout_height="wrap_content"
-		android:textAppearance="?android:attr/textAppearanceLarge"
-		android:layout_width="wrap_content"
-		android:text="Large Text"
-		android:textColor="#FFFFFF"
-		android:textSize="26sp"
-		android:layout_marginBottom="40dp"
-		android:id="@+id/fillinblankTextView1"/>
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:orientation="vertical"
+		android:background="#1C1C28"
+		android:paddingTop="10dp">
 
-	<EditText
-		android:layout_height="wrap_content"
-		android:layout_width="match_parent"
-		android:ems="10"
-		android:textColor="#DEDEDE"
-		android:layout_marginBottom="10dp"
-		android:id="@+id/fillinblankEditText1"/>
+		<TextView
+			android:layout_height="wrap_content"
+			android:textAppearance="?android:attr/textAppearanceLarge"
+			android:layout_width="wrap_content"
+			android:text="Large Text"
+			android:textColor="#FFFFFF"
+			android:textSize="26sp"
+			android:layout_marginBottom="40dp"
+			android:id="@+id/fillinblankTextView1"/>
 
-	<Button
-		android:layout_height="wrap_content"
-		android:layout_width="match_parent"
-		android:text="Submit Answer"
-		android:background="#198754"
-		android:textColor="#FFFFFF"
-		android:id="@+id/fillinblankButton1"/>
+		<EditText
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			android:ems="10"
+			android:textColor="#DEDEDE"
+			android:layout_marginBottom="10dp"
+			android:id="@+id/fillinblankEditText1"
+			android:inputType="text"/>
 
-</LinearLayout>
+		<Button
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			android:text="Submit Answer"
+			android:background="#198754"
+			android:textColor="#FFFFFF"
+			android:id="@+id/fillinblankButton1"/>
+
+	</LinearLayout>
+
+</ScrollView>
 
